@@ -1,0 +1,13 @@
+{
+  "name": "buildkit",
+  "owner": { "name": "Mark Holthaus" },
+  "description": "Private marketplace for buildkit.",
+  "plugins": [
+    {
+      "name": "buildkit",
+      "source": "./",
+      "description": "Mark's own software team as a Claude Code plugin.",
+      "version": "0.1.0"
+    }
+  ]
+}

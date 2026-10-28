@@ -1,0 +1,5 @@
+{
+  "name": "bkexp",
+  "version": "0.0.1",
+  "description": "Throwaway agents for the buildkit worker cost measurement"
+}

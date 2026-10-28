@@ -1,0 +1,8 @@
+{
+  "name": "buildkit",
+  "version": "0.1.0",
+  "description": "Mark's own software team: desk skills, stripped helper agents, hooks that enforce tests and caps, and the kit state tool.",
+  "author": { "name": "Mark Holthaus" },
+  "repository": "https://github.com/MarkHolthaus/buildkit",
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,35 @@
+# buildkit project config. Copy to <project>/build/config.yml.
+# kit reads a small YAML subset: `key: value`, `key: [a, b]`, quoted strings,
+# whole numbers, `# comments`, a `key:` with `  - item` lines, and one level of
+# `key:` with `  sub: value` lines. Nothing else.
+
+# Required. kit brief fails, and the launch gate denies, without these three.
+language: "Python 3, stdlib unittest"
+test_command: "cd game && python3 -m unittest discover -s tests"
+key_paths:
+  - game/
+  - pipeline/
+
+# Helpers never edit these. build/ is always protected.
+protected:
+  - .env
+  - pipeline/build/
+
+# Given to ui-designer briefs only.
+design_rules: ""
+
+main_branch: main
+remote: origin
+
+# push: Mark's ship merges to main_branch and pushes.
+# pr: Mark's ship pushes bk/<id> and opens a pull request instead.
+ship: push
+gh: gh
+test_timeout: 1800
+
+limits:
+  big_running: 2
+  mark_owes: 5
+  attempts: 2
+  review_lines: 150
+  plan_max_items: 8
