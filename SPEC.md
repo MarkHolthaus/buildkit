@@ -8,11 +8,7 @@ Status: draft 4, Oct 27 2026. Steps 1 to 4 built (measurement, kit, agents and s
 
 ## What it is
 
-Mark's own software team. He says what he wants. A planner breaks big ideas into pieces. Builders each work on their own branch in their own worktree. A reviewer checks risky work. Mark decides the push. When a piece ships or is dropped, its worktree, branch and any chat are cleaned up.
-
-Mark, Oct 27 2026: "I see it as more of a place where I can dump the ideas and features and they get routed out to a coder, a UI designer, a security and performance reviewer. and then come back to me but I want to keep the usage down and the context down"
-
-Mark, Oct 27 2026: "i say what i want Fires up a planning agent, then different agents for building, managing their own work trees, deleting agents and chats once that is done, reviewing things. And then deciding for the push. Basically my own software development team."
+Mark's own software team. He says what he wants. A planner breaks big ideas into pieces. Builders each work on their own branch in their own worktree. A reviewer checks risky work. Mark decides the push. When a piece ships or is dropped, its worktree, branch and any chat are cleaned up. Ideas and features are dumped in and routed to a coder, a UI designer and reviewers, with usage and context kept low.
 
 Works for any project. First pilot: a Python game repo with 480 tests.
 
