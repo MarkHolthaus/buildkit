@@ -2,7 +2,7 @@
 
 **I built a Claude Code plugin that sends coding jobs to separate AI helpers on their own git branches, with a test gate before anything counts as done. A helper that I trimmed starts at about 5.4k tokens, against 46.7k for a default helper (15 measured runs).**
 
-Solo project. I design it and direct Claude Code to write and test it. Python, git worktrees, Claude Code hooks and agents. MIT licence.
+Solo project. I design it and develop it alongside agentic coding agents. Python, git worktrees, Claude Code hooks and agents. MIT licence.
 
 ---
 
@@ -82,7 +82,7 @@ Run it inside the project that should have it. Copy `templates/config.yml` to `b
 
 ## Honest limits
 
-- I design the system and direct Claude Code to write and test it. I did not hand-write the code.
+- I design the system and develop it alongside agentic coding agents.
 - The tests ran on macOS only. The UI-designer screenshot path is unit tested but not run live.
 - `templates/config.yml` holds generic placeholder values (`src/`, `tests/`). Set your own before use.
 - The tool's own messages and agent briefs call the user "Mark", because I wrote it for myself first. Read that as "the person at the desk".
