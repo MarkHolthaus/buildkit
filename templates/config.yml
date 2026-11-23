@@ -5,15 +5,14 @@
 
 # Required. kit brief fails, and the launch gate denies, without these three.
 language: "Python 3, stdlib unittest"
-test_command: "cd game && python3 -m unittest discover -s tests"
+test_command: "python3 -m unittest discover -s tests"
 key_paths:
-  - game/
-  - pipeline/
+  - src/
+  - tests/
 
 # Helpers never edit these. build/ is always protected.
 protected:
   - .env
-  - pipeline/build/
 
 # Given to ui-designer briefs only.
 design_rules: ""
@@ -21,8 +20,8 @@ design_rules: ""
 main_branch: main
 remote: origin
 
-# push: Mark's ship merges to main_branch and pushes.
-# pr: Mark's ship pushes bk/<id> and opens a pull request instead.
+# push: ship merges to main_branch and pushes.
+# pr: ship pushes bk/<id> and opens a pull request instead.
 ship: push
 gh: gh
 test_timeout: 1800

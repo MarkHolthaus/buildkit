@@ -1,7 +1,7 @@
 {
   "name": "buildkit",
   "owner": { "name": "Mark Holthaus" },
-  "description": "Private marketplace for buildkit.",
+  "description": "One-plugin marketplace for buildkit.",
   "plugins": [
     {
       "name": "buildkit",

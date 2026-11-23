@@ -43,7 +43,7 @@ Every step writes to the item's file through `kit`. Nothing important lives only
 
 ## What I measured
 
-The worker design depends on one number: what a helper costs before it has done anything. Same read-only task, Sonnet, 15 headless runs ([full table](docs/2026-10-27%20worker%20cost.md)):
+The worker design depends on one number: what a helper costs before it has done anything. Same read-only task, Sonnet, 15 headless runs in four variants. The two that matter are below (4 stripped, 5 default runs; the other 6 are in the [full table](docs/2026-10-27%20worker%20cost.md)). The new-chat figure is a baseline from the earlier process, not one of the 15:
 
 | Helper | Start cost (tokens) | Whole run, processed |
 |---|---|---|
@@ -84,7 +84,9 @@ Run it inside the project that should have it. Copy `templates/config.yml` to `b
 
 - I design the system and direct Claude Code to write and test it. I did not hand-write the code.
 - The tests ran on macOS only. The UI-designer screenshot path is unit tested but not run live.
-- `templates/config.yml` still holds the example values from my first project.
+- `templates/config.yml` holds generic placeholder values (`src/`, `tests/`). Set your own before use.
+- The tool's own messages and agent briefs call the user "Mark", because I wrote it for myself first. Read that as "the person at the desk".
+- The Claude Code plugin install steps were checked in October on one machine. I have not re-run them since.
 - This repo is a snapshot from late October (spec draft 4). A later private version has shipped three small features into a separate private repo. It also added a model and effort picker and the changed-test check mentioned above. Those are not here yet.
 - The cost table is 15 runs of one read-only task on Sonnet. It shows the size of the gap, not a precise saving.
 
